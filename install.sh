@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 CURDIR=$(cd $(dirname $0); pwd)
-# PREFIX=/usr/local
+PREFIX=/usr/local
 # PREFIX=${HOME}/local
 # PREFIX=${CURDIR}/local
 # PREFIX=

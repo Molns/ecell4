@@ -480,7 +480,7 @@ cdef extern from "ecell4/core/observers.hpp" namespace "ecell4":
     #     void reset()
 
     cdef cppclass Cpp_TimingNumberObserver "ecell4::TimingNumberObserver":
-        Cpp_TimingNumberObserver(vector[Real], vector[string]) except +
+        Cpp_TimingNumberObserver(vector[double], vector[string]) except +
         Real next_time()
         Integer num_steps()
         vector[vector[Real]] data()

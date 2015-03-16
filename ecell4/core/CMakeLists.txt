@@ -28,8 +28,8 @@ set(HPP_FILES
     PlanarSurface.hpp Rod.hpp collision.hpp
     comparators.hpp SimulatorFactory.hpp)
 
-find_package(HDF5 COMPONENTS C CXX HL REQUIRED)
-include_directories(${HDF5_INCLUDE_DIRS})
+#find_package(HDF5 COMPONENTS C CXX HL REQUIRED)
+#include_directories(${HDF5_INCLUDE_DIRS})
 
 # find_package(Boost COMPONENTS regex)
 find_package(Boost REQUIRED)

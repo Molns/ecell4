@@ -248,7 +248,7 @@ cdef class FixedIntervalTrajectoryObserver:
 
 cdef class TimingNumberObserver:
 
-    def __cinit__(self, vector[Real] t, vector[string] species):
+    def __cinit__(self, vector[double] t, vector[string] species):
         self.thisptr = new shared_ptr[Cpp_TimingNumberObserver](
             new Cpp_TimingNumberObserver(t, species))
 
