@@ -3,8 +3,10 @@ if(window['d3'] === undefined ||
    window['THREE'] === undefined ||
    window['Elegans'] === undefined){
     var paths = {
-	d3: 'http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min',
-	THREE: 'http://cdnjs.cloudflare.com/ajax/libs/three.js/r66/three.min'
+	// d3: 'http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min',
+	// THREE: 'http://cdnjs.cloudflare.com/ajax/libs/three.js/r66/three.min'
+	d3: '/static/custom/d3.min.js',
+	THREE: '/static/custom/three.js'
     };
 
     var shim = {
@@ -22,7 +24,7 @@ if(window['d3'] === undefined ||
 	// URL shown below (rawgit.com) should be replaced!
 	var script = d3.select("head")
 	    .append("script")
-	    .attr("src", 'https://rawgit.com/domitry/elegans/master/release/elegans.js')
+	    .attr("src", '/static/custom/elegans.js')
 	    .attr("async", true);
 
 	script[0][0].onload = script[0][0].onreadystatechange = function(){
